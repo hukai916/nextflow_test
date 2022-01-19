@@ -1,0 +1,62 @@
+Jan-18 22:51:04.175 [main] DEBUG nextflow.cli.Launcher - $> nextflow run multi_input.nf -resume sad_fermi
+Jan-18 22:51:04.290 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.06.0-edge
+Jan-18 22:51:04.328 [main] INFO  nextflow.cli.CmdRun - Launching `multi_input.nf` [grave_woese] - revision: 76a71418a1
+Jan-18 22:51:04.401 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/kaihu/.nextflow/plugins
+Jan-18 22:51:04.402 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-18 22:51:04.405 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Jan-18 22:51:04.412 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-18 22:51:04.413 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-18 22:51:04.417 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jan-18 22:51:04.431 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-18 22:51:04.500 [main] DEBUG nextflow.Session - Session uuid: d98db8db-7435-4704-91ed-3d6ef2579638
+Jan-18 22:51:04.500 [main] DEBUG nextflow.Session - Run name: grave_woese
+Jan-18 22:51:04.503 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-18 22:51:04.538 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.06.0-edge build 5578
+  Created: 03-07-2021 20:06 UTC (16:06 EDT)
+  System: Mac OS X 10.16
+  Runtime: Groovy 3.0.8 on Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 83910@LRB6608ML63221 [192.168.0.22]
+  CPUs: 16 - Mem: 16 GB (139.8 MB) - Swap: 10 GB (1.1 GB)
+Jan-18 22:51:04.574 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Projects/workflow/test/multi_input_test/work [Mac OS X]
+Jan-18 22:51:04.574 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/kaihu/Projects/workflow/test/multi_input_test/bin
+Jan-18 22:51:04.584 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-18 22:51:04.596 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-18 22:51:04.676 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-18 22:51:04.811 [main] DEBUG nextflow.Session - Session start invoked
+Jan-18 22:51:05.686 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-18 22:51:05.720 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: MODULE0, MODULE1, MODULE2, MODULE3
+Jan-18 22:51:05.808 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-18 22:51:05.811 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-18 22:51:05.816 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-18 22:51:05.821 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=16 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-18 22:51:05.839 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-18 22:51:05.940 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-18 22:51:05.940 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-18 22:51:05.943 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-18 22:51:05.943 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-18 22:51:05.947 [main] WARN  nextflow.extension.OperatorEx - The operator `first` is useless when applied to a value channel which returns a single value by definition
+Jan-18 22:51:05.962 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-18 22:51:05.963 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-18 22:51:05.969 [main] DEBUG nextflow.Session - Ignite dataflow network (6)
+Jan-18 22:51:05.975 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MODULE0
+Jan-18 22:51:05.975 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MODULE1
+Jan-18 22:51:05.976 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MODULE2
+Jan-18 22:51:05.976 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MODULE3
+Jan-18 22:51:05.977 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-18 22:51:05.977 [main] DEBUG nextflow.Session - Session await
+Jan-18 22:51:05.977 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test_files/; pattern: b_*.txt; options: [:]
+Jan-18 22:51:06.153 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [9f/f28ccf] Cached process > MODULE0 (1)
+Jan-18 22:51:06.153 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [e6/181e00] Cached process > MODULE2 (1)
+Jan-18 22:51:06.153 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [8a/2d6c01] Cached process > MODULE2 (3)
+Jan-18 22:51:06.153 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [c1/d3cba7] Cached process > MODULE2 (2)
+Jan-18 22:51:06.222 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [f6/34f485] Cached process > MODULE1
+Jan-18 22:51:06.235 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [bf/fd0d79] Cached process > MODULE3 (3)
+Jan-18 22:51:06.238 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [91/3fcb3f] Cached process > MODULE3 (2)
+Jan-18 22:51:06.238 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [00/b8f058] Cached process > MODULE3 (1)
+Jan-18 22:51:06.251 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-18 22:51:06.351 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-18 22:51:06.356 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=8; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=215ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jan-18 22:51:06.522 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-18 22:51:06.538 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
