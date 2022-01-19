@@ -6,3 +6,5 @@ The issue: when using operators like collect() or first(), the .out mysteriously
 To replicate: switch on and off line 53-54 to see the different effect.
 
 Also note, with line 54, the "println MODULE1.out.file1" becomes "DataflowVariable(value=null)" instead of "DataflowBroadcast around DataflowStream[?]".
+
+Tested with 21.10 and 21.06.
